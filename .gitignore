@@ -3,3 +3,5 @@ vbot/
 
 #pycache
 __pycache__/
+
+.env

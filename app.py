@@ -1,8 +1,12 @@
 import discord
 from discord.ext import commands
+import os
+from dotenv import load_dotenv
 from services import music
 
-API_KEY = "MTIxMzg5ODQyODQyNjM1NDc2MA.GjbDoS.UWcIZiSoYPwxw-jNGRBaKYsTjGpnmhOaEnoNmY"
+
+load_dotenv()
+API_KEY = os.getenv("API_KEY")
 client = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 
 
